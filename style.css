@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: cornflowerblue;
+    background-color: #05000e;
 }
 
 main{
@@ -18,11 +18,11 @@ main{
 }
 
 .clock{
-    width: 600px;
-    height: 600px;
-    background-color: aliceblue;
+    min-width: 600px;
+    min-height: 600px;
+    background-color: #fafff1;
     border-radius: 600px;
-    border: 15px groove #333;
+    border: 15px solid #000000;
     position: relative;
     display: flex;
     align-items: center;
@@ -83,7 +83,34 @@ main{
     background-color: #a52a2a;
     position: absolute;
     border-radius: 5px;
-    transform: translate(0, -50%) rotate(240deg);
+    transform: translate(0, -50%);
     transform-origin: bottom center;
+}
 
+.minute-hand{
+    width: 7px;
+    height: 200px;
+    background-color: #333;
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+
+.hour-hand{
+    width: 10px;
+    height: 150px;
+    background-color: #333;
+    position: absolute;
+    border-radius: 10px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+
+.center{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #a52a2a;
+    position: absolute;
 }
